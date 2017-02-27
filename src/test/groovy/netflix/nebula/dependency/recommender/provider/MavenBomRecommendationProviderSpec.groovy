@@ -42,6 +42,14 @@ class MavenBomRecommendationProviderSpec extends Specification {
                   </dependency>
                 </dependencies>
               </dependencyManagement>
+              <profiles>
+                <profile>
+                    <id>java7</id>
+                    <activation>
+                        <jdk>(,1.8)</jdk>
+                    </activation>
+                </profile>
+              </profiles>
             </project>
         '''
 
